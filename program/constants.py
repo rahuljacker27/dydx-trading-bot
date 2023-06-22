@@ -5,10 +5,13 @@ from decouple import config   # helps in accessing our environment variables
 MODE = "DEVLOPMENT"
 
 #Close all open positions and orders
-ABORT_ALL_POSITIONS = False
+ABORT_ALL_POSITIONS = True
 
 #Find Cointegrated Pirs
-FIND_COINTEGRATED = True
+FIND_COINTEGRATED = False
+
+#place trades
+MANAGE_EXITS = True
 
 # PLACE TRADES
 PLACE_TRADES = True
@@ -22,7 +25,7 @@ WINDOW = 21
 #THRESHOLDS - OPENING
 MAX_HALF_LIFE = 24
 ZSCORE_THRESH = 1.5
-USD_PES_TRADE = 50
+USD_PER_TRADE = 50
 USD_MIN_COLLATERAL = 1900
 
 #THRESHOLD FOR CLOSING 
